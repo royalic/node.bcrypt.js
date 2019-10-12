@@ -17,7 +17,7 @@ module.exports.genSaltSync = function genSaltSync(rounds, minor) {
     if (!rounds) {
         rounds = 10;
     } else if (typeof rounds !== 'number') {
-        throw new Error('rounds must be a number');
+        throw new Error('round must be a number');
     }
 
     if(!minor) {
